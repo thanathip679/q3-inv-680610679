@@ -39,9 +39,21 @@ export function CategoryCards() {
 
         return (
           // Use Card component to display values by category
+          
           <div>
-            {category.label} - ฿{categoryValue.toFixed(2)} - {categoryUnits}{" "}
-            units
+            <Card>
+        <CardHeader className="flex flex-row items-center justify-between pb-2">
+          <CardTitle className="text-sm font-medium">{category.label}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="text-2xl text-black-500 font-bold" >฿{categoryValue.toFixed(2)}</div>
+        </CardContent>
+        <CardContent>
+          <div className=" text-black-500 " >{categoryUnits}{" "}
+            units</div>
+        </CardContent>
+      </Card>
+            
           </div>
         );
       })}
