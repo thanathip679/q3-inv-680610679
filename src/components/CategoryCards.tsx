@@ -1,23 +1,23 @@
 import { useItemStore } from "@/store/dataStore";
 import { categoryOptions } from "@/types/datatypes";
-import {
-  Laptop,
-  Pencil,
-  Apple,
-  Shirt,
-  Wrench,
-  MoreHorizontal,
-} from "lucide-react";
+// import {
+//   Laptop,
+//   Pencil,
+//   Apple,
+//   Shirt,
+//   Wrench,
+//   MoreHorizontal,
+// } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const iconMap: Record<string, React.ReactNode> = {
-  Electronics: <Laptop className="h-4 w-4" />,
-  Stationery: <Pencil className="h-4 w-4" />,
-  Grocery: <Apple className="h-4 w-4" />,
-  Clothing: <Shirt className="h-4 w-4" />,
-  Tools: <Wrench className="h-4 w-4" />,
-  Other: <MoreHorizontal className="h-4 w-4" />,
-};
+// const iconMap: Record<string, React.ReactNode> = {
+//   Electronics: <Laptop className="h-4 w-4" />,
+//   Stationery: <Pencil className="h-4 w-4" />,
+//   Grocery: <Apple className="h-4 w-4" />,
+//   Clothing: <Shirt className="h-4 w-4" />,
+//   Tools: <Wrench className="h-4 w-4" />,
+//   Other: <MoreHorizontal className="h-4 w-4" />,
+// };
 
 export function CategoryCards() {
   const inventory = useItemStore((state) => state.inventory);
